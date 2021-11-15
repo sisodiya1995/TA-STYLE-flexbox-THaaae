@@ -1,13 +1,79 @@
-<!-- 
-1. Create a simple page having a header, main content, and a footer.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/a44f9b07be.js" crossorigin="anonymous"></script>
+    <title>Flex-box | block-2</title>
+</head>
+<body>
+    <header class="header">
 
-2. Inside the header keep the brand name to the left and all the navigation to the right.
+        <div class="container flex">
+            <a href="#">
+             <img src="./assets/media/altcampus-logo.svg" alt="logp">
+            </a>
 
-4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
-
-5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
-
-6. After the gallery section footer will come.
-
-7. Use flexbox properties and values to create columns.
- -->
+            <nav>
+                <ul class='flex'>
+                    <li><a href="#">HOME </a></li>
+                    <li> <a href="#">ABOUT </a></li>
+                    <li> <a href="#">CONTACT </a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        <main>
+            <section class="container">
+                  <article class="article flex ">
+                        <div class="content">   
+                           <h2 class="heading"> INDIAN TEAM </h2>
+                            <p class="para">
+                                Lion, ( Panthera leo ), large, powerfully built cat (family Felidae ) that is second in size only to the tiger. The proverbial “king of beasts,” the lion has been one of the best-known wild animals since earliest times. Lions are most active at night and live in a variety of habitats but prefer grassland, savanna, dense scrub, and open woodland.
+                            </p>
+                            <p class="para">
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque laudantium perferendis incidunt iure! Cum consequuntur aperiam facilis impedit architecto quasi, eius ut quae error, ullam animi? Harum odio dolore mollitia.
+                            </p>
+                        </div>
+                        <div class="div-image">
+                            <img src="./assets/media/Rahul-Dravid.webp" class="image-article" alt="messi">
+                        </div>
+                  </article>
+            </section>
+            <section  class="container">
+                <h3 class="gallary-heading">GALLARY</h3>
+                <div class="gallary-flex">
+                    <div class="gallary-image-style"  >
+                        <img src="./assets/media/kl-rahul.jpg" alt="kl-rahul" class="img-width" >
+                    </div>
+                    <div class="gallary-image-style">
+                        <img src="./assets/media/rohit.jpg" alt="rohit" class="img-width" >
+                    </div>
+                    <div class="gallary-image-style">
+                        <img src="./assets/media/kohli.jpg" alt="king-kohli" class="img-width">
+                    </div>
+                    <div class="gallary-image-style">
+                        <img src="./assets/media/jadeja.jpg" alt="jadeja" class="img-width">
+                    </div>
+                    <div class="gallary-image-style">
+                        <img src="./assets/media/jashprit.jpg" alt="jashprit" class="img-width" >
+                    </div>
+                    <div class="gallary-image-style">
+                        <img src="./assets/media/Mohammed-Shami.jpg" alt="shami" class="img-width">
+                    </div> 
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer-flex">
+                <nav class="nav-footer">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"> <i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </nav>
+            </div>
+        </footer>
+</body>
+</html>
