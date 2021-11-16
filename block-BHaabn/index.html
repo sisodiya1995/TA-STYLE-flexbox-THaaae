@@ -1,8 +1,63 @@
-<!-- 
-- Create a gallery using flexbox according to the layout shown below.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/a44f9b07be.js" crossorigin="anonymous"></script>
+    <title>Flex-box | Assignment-1</title>
+</head>
+<body>
+    <header class="header">
 
-![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-1.png)
+        <div class="container flex">
+            <a href="#">
+             <img src="./assets/media/altcampus-logo.svg" alt="logp">
+            </a>
 
-- Using CSS resets is necessary.
-- Use semantic tags and keep the nesting and indentation proper.
--->
+            <nav>
+                <ul class='flex'>
+                    <li><a href="#">HOME </a></li>
+                    <li> <a href="#" class="link-color">GALLARY </a></li>
+                    <li> <a href="#">ABOUT </a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        <main>
+            <section  class="container">
+                <h3 class="gallary-heading">GALLARY</h3>
+                <div class="gallary-flex">
+                    <div class="gallary-image-style"  >
+                        <img src="./assets/media/01.png" alt="pic-1" class="img-width" >
+                    </div>
+                    <div class="gallary-image-style">
+                        <img src="./assets/media/02.png" alt="pic-2" class="img-width" >
+                    </div>
+                    <div class="gallary-image-style">
+                        <img src="./assets/media/03.png" alt="pic-3" class="img-width">
+                    </div>
+                    <div class="gallary-image-style">
+                        <img src="./assets/media/04.png" alt="pic-4" class="img-width">
+                    </div>
+                    <div class="gallary-image-style">
+                        <img src="./assets/media/05.png" alt="pic-5" class="img-width" >
+                    </div>
+                    <div class="gallary-image-style">
+                        <img src="./assets/media/06.png" alt="pic-6" class="img-width">
+                    </div> 
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container flex">
+                <span> &copy; AltCampus</span>
+                <nav class="nav-footer">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </nav>
+            </div>
+        </footer>
+</body>
+</html>
